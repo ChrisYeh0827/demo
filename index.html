@@ -24,6 +24,7 @@
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Contacts</a></li>
                 </ul>
+                <a href="#" class="showmenu">Menu</a>
             </nav>
     </div>
 </div>
@@ -104,6 +105,20 @@
     </div>
     
 </div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous">
 
+ 
+</script>
+<script>
+$(document).ready(function() {
+   $('.showmenu').on('click',  function(e){
+      e.preventDefault();
+      $('body').toggleClass('menu-show');
+  });
+});
+</script>
 </body>
 </html>
